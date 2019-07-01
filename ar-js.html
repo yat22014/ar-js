@@ -5,17 +5,159 @@
   <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs>
         <a-assets>
-          <img id="360img" src="./frame0.png">
+          <img id="360img0" src="./360image/frame0.png">
+          <img id="360img1" src="./360image/frame1.png">
+          <img id="360img2" src="./360image/frame2.png">
+          <img id="360img3" src="./360image/frame3.png">
+          <img id="360img4" src="./360image/frame4.png">
+          <img id="360img5" src="./360image/frame5.png">
+          <img id="360img6" src="./360image/frame6.png">
+          <img id="360img7" src="./360image/frame7.png">
+          <img id="360img8" src="./360image/frame8.png">
+          <img id="360img9" src="./360image/frame9.png">
+          <img id="360img10" src="./360image/frame10.png">
+          <img id="360img11" src="./360image/frame11.png">
+          <img id="360img12" src="./360image/frame12.png">
+          <img id="360img13" src="./360image/frame13.png">
+          <img id="360img14" src="./360image/frame14.png">
+          <img id="360img15" src="./360image/frame15.png">
+          <img id="360img16" src="./360image/frame16.png">
+          <img id="360img17" src="./360image/frame17.png">
+          <img id="360img18" src="./360image/frame18.png">
+          <img id="360img19" src="./360image/frame19.png">
+          <img id="360img20" src="./360image/frame20.png">
+          <img id="360img21" src="./360image/frame21.png">
+          <img id="360img22" src="./360image/frame22.png">
+          <img id="360img23" src="./360image/frame23.png">
+          <img id="360img24" src="./360image/frame24.png">
+          <img id="360img25" src="./360image/frame25.png">
+          <img id="360img26" src="./360image/frame26.png">
+          <img id="360img27" src="./360image/frame27.png">
+          <img id="360img28" src="./360image/frame28.png">
+          <img id="360img29" src="./360image/frame29.png">
+          <img id="360img30" src="./360image/frame30.png">
+          <img id="360img31" src="./360image/frame31.png">
+          <img id="360img32" src="./360image/frame32.png">
+          <img id="360img33" src="./360image/frame33.png">
+          <img id="360img34" src="./360image/frame34.png">
+          <img id="360img35" src="./360image/frame35.png">
+          <img id="360img36" src="./360image/frame36.png">
+          <img id="360img37" src="./360image/frame37.png">
+          <img id="360img38" src="./360image/frame38.png">
+          <img id="360img39" src="./360image/frame39.png">
+          <img id="360img40" src="./360image/frame40.png">
+          <img id="360img41" src="./360image/frame41.png">
+          <img id="360img42" src="./360image/frame42.png">
+          <img id="360img43" src="./360image/frame43.png">
+          <img id="360img44" src="./360image/frame44.png">
+          <img id="360img45" src="./360image/frame45.png">
+          <img id="360img46" src="./360image/frame46.png">
+          <img id="360img47" src="./360image/frame47.png">
+          <img id="360img48" src="./360image/frame48.png">
+          <img id="360img49" src="./360image/frame49.png">
+          <img id="360img50" src="./360image/frame50.png">
+          <img id="360img51" src="./360image/frame51.png">
+          <img id="360img52" src="./360image/frame52.png">
+          <img id="360img53" src="./360image/frame53.png">
+          <img id="360img54" src="./360image/frame54.png">
+          <img id="360img55" src="./360image/frame55.png">
+          <img id="360img56" src="./360image/frame56.png">
+          <img id="360img57" src="./360image/frame57.png">
+          <img id="360img58" src="./360image/frame58.png">
+          <img id="360img59" src="./360image/frame59.png">
+          <img id="360img60" src="./360image/frame60.png">
+          <img id="360img61" src="./360image/frame61.png">
+          <img id="360img62" src="./360image/frame62.png">
+          <img id="360img63" src="./360image/frame63.png">
+          <img id="360img64" src="./360image/frame64.png">
+          <img id="360img65" src="./360image/frame65.png">
+          <img id="360img66" src="./360image/frame66.png">
+          <img id="360img67" src="./360image/frame67.png">
+          <img id="360img68" src="./360image/frame68.png">
+          <img id="360img69" src="./360image/frame69.png">
+          <img id="360img70" src="./360image/frame70.png">
+          <img id="360img71" src="./360image/frame71.png">
         </a-assets>
         <!-- <a-box src="#360img" position=" 0 2 -5" rotation=" 0 45 45" scale="2 2 2"></a-box> -->
 
 
-  	<a-marker preset="hiro">
+  	<a-marker preset="hiro" id="hiro" hiromarker>
             <!-- <a-box position='0 0.5 0' material='color: yellow;'></a-box> -->
             <!-- <img src="https://placeimg.com/640/480/any" /> -->
-                    <a-image src="#360img" rotation="270 0 0"></a-image>
+            <!-- <a-entity position="-0 0.5 0" rotation="270 0 0"> -->
+            <a-entity rotation="270 0 0">
+                    <!-- <a-image src="#360img0" id="planeImage"></a-image> -->
+                    <a-image src="#360img0" id="planeImage"></a-image>
+            </a-entity>
   	</a-marker>
-  	<a-entity camera></a-entity>
+
+    <!-- <a-marker preset="hello" id="hello">
+      <a-image src="#360img1" rotation="270 0 0"></a-image>
+    </a-marker> -->
+    <a-marker type="pattern" preset="custom" id="third_marker" url="./pattern-IMG_0400.patt">
+      <a-image src="#360img1" rotation="270 0 0"></a-image>
+    </a-marker>
+  	<!-- <a-entity camera id="camera"></a-entity> -->
+    <a-camera id="camera" position="0 0 0" listener></a-camera>
     </a-scene>
   </body>
+  <script>
+    console.log(AFRAME.utils.device.isMobile());
+    let camera = document.querySelector('#camera');
+    // console.log(AFRAME.utils.entity.getComponentProperty(camera, 'camera'));
+    // console.log(document.getElementById('camera').object3D.getWorldPosition());
+    // let position = document.getElementById('camera').getAttribute('position');
+    // var worldPos = new THREE.Vector3();
+    // worldPos.setFromMatrixPosition(camera.object3D.matrixWorld);
+    // console.log(worldPos.x);
+    // console.log(position);
+    camera.addEventListener('componentchanged', function (evt) {
+      console.log(evt);
+      if (evt.detail.name !== 'position') { return; }
+      console.log(evt.detail.newData);
+    });
+    let planeImage = document.querySelector('#planeImage');
+    let hiroMarker = document.querySelector('#hiro');
+    console.log(hiroMarker, hiroMarker.getAttribute('position'));
+    AFRAME.registerComponent('listener', {
+      tick: function() {
+        // console.log(this.el.getAttribute('position'), this, 55);
+      }
+    });
+    AFRAME.registerComponent('hiromarker', {
+      init: function() {
+      },
+      tick: function() {
+        // this.el.setAttribute('position', {x: 0, y: 0, z: -3});
+        // this.el.object3D.position.x += 0.2;
+        this.el.object3D.position.y += 0.1;
+        this.el.object3D.position.z += 1;
+        // console.log(planeImage, 134, this);
+        console.log(this.el.getAttribute('position'), this.el.getAttribute('rotation'), this);
+        if (this.el.children[0]) {
+          if (this.el.children[0].children[0]) {
+            console.log(138, this.el.children[0].children[0].getAttribute('src'));
+            let img = this.el.children[0].children[0];
+            let imgSrcToDisplay = "";
+            let imgNumberToDisplay = Math.floor(this.el.getAttribute('rotation').z);
+            console.log(imgNumberToDisplay);
+            if (imgNumberToDisplay < 0) {
+              imgNumberToDisplay = 72 + imgNumberToDisplay;
+            } else {
+
+            }
+            imgSrcToDisplay = "#360img" + imgNumberToDisplay.toString();
+            img.setAttribute('src', imgSrcToDisplay);
+            // if(this.el.getAttribute('rotation').z > 0) {
+            //   let imgSrc ="#360img4";
+            //   img.setAttribute('src', imgSrc);
+            // } else {
+            //   let imgSrc = "#360img70";
+            //   img.setAttribute('src', imgSrc);
+            // }
+          }
+        }
+      }
+    });
+  </script>
 </html>
